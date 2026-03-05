@@ -1,0 +1,340 @@
+/* General Styles for All Pages */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.7;
+  color: #333;
+  padding: 20px;
+  background-color: #e8f4f8; /* Pastel blue for index */
+}
+
+/* Navigation Bar */
+nav {
+  max-width: 900px;
+  margin: 0 auto 30px auto;
+  background-color: #34495e;
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.05em;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #3498db;
+  text-decoration: underline;
+}
+
+/* Main Container */
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+h1 {
+  color: #2c3e50;
+  font-size: 2.5em;
+  margin: 20px 0 30px 0;
+  text-align: center;
+  border-bottom: 3px solid #3498db;
+  padding-bottom: 15px;
+  font-family: 'Georgia', serif;
+}
+
+h2 {
+  color: #34495e;
+  font-size: 1.8em;
+  margin: 25px 0 15px 0;
+  border-left: 4px solid #3498db;
+  padding-left: 12px;
+  font-family: 'Georgia', serif;
+}
+
+/* Paragraphs - Moderate Spacing */
+p {
+  font-size: 1.05em;
+  margin: 18px 0;
+  line-height: 1.8;
+  color: #444;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Styled Paragraphs for Index Page */
+body p:nth-of-type(1),
+body p:nth-of-type(2),
+body p:nth-of-type(3) {
+  background-color: #f0f8ff;
+  padding: 20px;
+  border-left: 5px solid #3498db;
+  border-radius: 6px;
+  margin: 20px auto;
+  max-width: 600px;
+  text-align: center;
+  font-size: 1.1em;
+  font-weight: 500;
+}
+
+/* Div Sections */
+div.info-section,
+div.content-section,
+div.image-section,
+div.link-section {
+  margin: 20px 0;
+}
+
+div.image-section {
+  text-align: center;
+}
+
+div.link-section {
+  text-align: center;
+}
+
+/* Span Highlight */
+span.highlight {
+  background-color: #fff3cd;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+/* Links */
+a {
+  color: #3498db;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #2980b9;
+  text-decoration: underline;
+}
+
+/* Lists */
+ul {
+  margin: 25px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  list-style: none;
+  max-width: 800px;
+}
+
+ul li {
+  margin: 0;
+  font-size: 1.05em;
+  color: #444;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  flex: 0 1 calc(33.333% - 17px);
+  min-width: 180px;
+}
+
+/* Styled List Items for Index Page - Softer Colors */
+ul li a {
+  display: block;
+  padding: 20px;
+  background-color: #b8d4e8;
+  color: #2c3e50;
+  text-align: center;
+  border-radius: 8px;
+  font-size: 1.1em;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 8px rgba(52, 152, 219, 0.2);
+  text-decoration: none;
+}
+
+ul li a:hover {
+  background-color: #a0c8e0;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 12px rgba(52, 152, 219, 0.3);
+  color: #2c3e50;
+}
+
+/* Style for "The Dog" (no link) */
+ul li:last-child {
+  padding: 20px;
+  background-color: #b8d4e8;
+  color: #2c3e50;
+  text-align: center;
+  border-radius: 8px;
+  font-size: 1.1em;
+  font-weight: bold;
+  box-shadow: 0 3px 8px rgba(52, 152, 219, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ol {
+  margin: 18px 0 18px 35px;
+}
+
+ol li {
+  margin: 10px 0;
+  font-size: 1.05em;
+  color: #444;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Images - Display Side by Side and Centered */
+img {
+  max-width: 48%;
+  height: auto;
+  border-radius: 6px;
+  margin: 20px auto;
+  display: inline-block;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  vertical-align: top;
+  text-align: center;
+}
+
+/* Center image container */
+body > img {
+  display: block;
+  margin: 20px auto;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 25px 0;
+  background-color: white;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+table, th, td {
+  border: 1px solid #bdc3c7;
+}
+
+th {
+  background-color: #34495e;
+  color: white;
+  padding: 12px;
+  text-align: left;
+  font-weight: bold;
+  font-family: 'Georgia', serif;
+}
+
+td {
+  padding: 12px;
+  text-align: left;
+  color: #333;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+tr:nth-child(even) {
+  background-color: #ecf0f1;
+}
+
+tr:hover {
+  background-color: #d5dbdb;
+}
+
+/* Line Breaks */
+br {
+  display: block;
+  margin: 8px 0;
+}
+
+/* Page-Specific Styles */
+/* Index Page - Pastel Blue */
+.index-page {
+  background-color: #e8f4f8;
+}
+
+/* Lion Page - Pastel Peach */
+.lion-page {
+  background-color: #ffe8d6;
+}
+
+/* Elephant Page - Pastel Mint */
+.elephant-page {
+  background-color: #d6f5e8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  main {
+    padding: 25px;
+  }
+
+  h1 {
+    font-size: 2em;
+    margin: 15px 0 20px 0;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  p {
+    font-size: 1em;
+    margin: 15px 0;
+  }
+
+  body p:nth-of-type(1),
+  body p:nth-of-type(2),
+  body p:nth-of-type(3) {
+    padding: 15px;
+    margin: 15px auto;
+    font-size: 1em;
+  }
+
+  ul {
+    flex-direction: column;
+    gap: 15px;
+    max-width: 100%;
+  }
+
+  ul li {
+    flex: 1 1 100%;
+    min-width: auto;
+  }
+
+  table {
+    font-size: 0.95em;
+  }
+
+  th, td {
+    padding: 10px;
+  }
+
+  img {
+    max-width: 100%;
+    margin: 15px auto;
+    display: block;
+  }
+}
