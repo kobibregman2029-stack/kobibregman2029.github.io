@@ -338,3 +338,8 @@ br {
     display: block;
   }
 }
+#main-heading {
+  color: #2c3e50;
+  font-size: 2.5em;
+  text-align: center;
+}
